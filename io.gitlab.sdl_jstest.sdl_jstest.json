@@ -1,7 +1,7 @@
 {
     "app-id": "io.gitlab.sdl_jstest.sdl_jstest",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "rename-appdata-file": "sdl-jstest.appdata.xml",
     "finish-args": [
