@@ -3,12 +3,13 @@
     "runtime": "org.freedesktop.Platform",
     "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
+    "command": "sdl-jstest",
+    "rename-icon": "sdl-jstest",
     "rename-appdata-file": "sdl-jstest.appdata.xml",
     "finish-args": [
         "--device=all",
         "--share=ipc",
-        "--socket=x11",
-        "--socket=wayland"
+        "--socket=x11"
     ],
     "modules": [
         "shared-modules/SDL/SDL-1.2.15.json",
@@ -18,15 +19,14 @@
             "buildsystem": "cmake-ninja",
             "config-opts": [
                 "-DCMAKE_BUILD_TYPE=Release",
-                "-DCMAKE_INSTALL_PREFIX:PATH=/app",
                 "-DBUILD_SDL_JSTEST=ON",
                 "-DBUILD_SDL2_JSTEST=OFF"
             ],
             "sources": [
                 {
                     "type": "git",
-                    "url": "https://gitlab.com/sdl-jstest/sdl-jstest.git",
-                    "commit": "269f727d4ceecf0f780d98d52652df8c52f0cf62"
+                    "url": "https://github.com/grumbel/sdl-jstest.git",
+                    "commit": "70d087085dea1c0e82b225800269f2c62d8df4ef"
                 }
             ]
         }
