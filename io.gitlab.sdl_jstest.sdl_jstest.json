@@ -5,6 +5,7 @@
     "sdk": "org.freedesktop.Sdk",
     "command": "sdl-jstest",
     "rename-icon": "sdl-jstest",
+    "rename-desktop-file": "sdl-jstest.desktop",
     "rename-appdata-file": "sdl-jstest.appdata.xml",
     "finish-args": [
         "--device=all",
@@ -27,6 +28,19 @@
                     "type": "git",
                     "url": "https://github.com/grumbel/sdl-jstest.git",
                     "commit": "70d087085dea1c0e82b225800269f2c62d8df4ef"
+                }
+            ]
+        },
+        {
+            "name": "desktop",
+            "buildsystem": "simple",
+            "build-commands": [
+                "install -D sdl-jstest.desktop /app/share/applications/sdl-jstest.desktop"
+            ],
+            "sources": [
+                {
+                    "type": "file",
+                    "path": "sdl-jstest.desktop"
                 }
             ]
         }
