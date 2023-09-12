@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=sdl-jstest
+Icon=sdl-jstest
+Terminal=true
+Exec=sdl-jstest
+Type=Application
+Categories=Game
+StartupNotify=false
